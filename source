@@ -1,0 +1,556 @@
+--[[
+	Don't blame..!
+]]--
+
+local sses = game.CoreGui:FindFirstChild("SSES");
+if sses then
+	sses:Destroy();
+end
+local Converted = {_SSES=Instance.new("ScreenGui"),_Holder=Instance.new("Frame"),_Button=Instance.new("TextButton"),_LocalScript=Instance.new("LocalScript"),_Header=Instance.new("Frame"),_Name=Instance.new("TextLabel"),_LocalScript1=Instance.new("LocalScript"),_Icon=Instance.new("ImageLabel"),_UIStroke=Instance.new("UIStroke"),_Close=Instance.new("TextButton"),_UIStroke1=Instance.new("UIStroke"),_LocalScript2=Instance.new("LocalScript"),_AutoRejoin=Instance.new("TextButton"),_UIStroke2=Instance.new("UIStroke"),_LocalScript3=Instance.new("LocalScript"),_Frame=Instance.new("ImageLabel"),_UIStroke3=Instance.new("UIStroke"),_ScrollingFrame=Instance.new("ScrollingFrame"),_TextBox=Instance.new("TextBox"),_LocalScript4=Instance.new("Script"),_Reset=Instance.new("TextButton"),_LocalScript5=Instance.new("LocalScript"),_Kick=Instance.new("TextButton"),_LocalScript6=Instance.new("LocalScript"),_Plunk=Instance.new("TextButton"),_LocalScript7=Instance.new("LocalScript"),_Punish=Instance.new("TextButton"),_LocalScript8=Instance.new("LocalScript"),_UIPadding=Instance.new("UIPadding"),_SoundSystem=Instance.new("LocalScript"),_clicking=Instance.new("Sound"),_hovers=Instance.new("Sound")};
+Converted['_SSES'].ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+Converted['_SSES'].Name = "SSES";
+Converted['_Holder'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Holder'].BackgroundTransparency = 1;
+Converted['_Holder'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Holder'].BorderSizePixel = 0;
+Converted['_Holder'].Position = UDim2.new(0.437000006, 0, 0.833370507, 0);
+Converted['_Holder'].Size = UDim2.new(0, 100, 0, 30);
+Converted['_Holder'].Name = "Holder";
+Converted['_Holder'].Parent = Converted['_SSES'];
+Converted['_Button'].Font = Enum.Font.Ubuntu;
+Converted['_Button'].Text = "Maximize";
+Converted['_Button'].TextColor3 = Color3.fromRGB(255, 85.0000025331974, 0);
+Converted['_Button'].TextSize = 16;
+Converted['_Button'].TextWrapped = true;
+Converted['_Button'].BackgroundColor3 = Color3.fromRGB(65.0000037252903, 65.0000037252903, 65.0000037252903);
+Converted['_Button'].BorderColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_Button'].Position = UDim2.new(-3.0517577e-7, 0, 0, 0);
+Converted['_Button'].Size = UDim2.new(0, 100, 0, 30);
+Converted['_Button'].Name = "Button";
+Converted['_Button'].Parent = Converted['_Holder'];
+Converted['_Header'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Header'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Header'].BorderSizePixel = 0;
+Converted['_Header'].Position = UDim2.new(-0.879999995, 0, -5.33333302, 0);
+Converted['_Header'].Size = UDim2.new(0, 275, 0, 20);
+Converted['_Header'].Visible = false;
+Converted['_Header'].Name = "Header";
+Converted['_Header'].Parent = Converted['_Button'];
+Converted['_Name'].Font = Enum.Font.Ubuntu;
+Converted['_Name'].Text = "SSES - ";
+Converted['_Name'].TextColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Name'].TextScaled = true;
+Converted['_Name'].TextSize = 16;
+Converted['_Name'].TextWrapped = true;
+Converted['_Name'].TextXAlignment = Enum.TextXAlignment.Left;
+Converted['_Name'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Name'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Name'].BorderSizePixel = 0;
+Converted['_Name'].Position = UDim2.new(0.0727272704, 0, 0, 0);
+Converted['_Name'].Size = UDim2.new(0, 200, 0, 19);
+Converted['_Name'].Name = "Name";
+Converted['_Name'].Parent = Converted['_Header'];
+Converted['_Icon'].Image = "rbxassetid://12755657711";
+Converted['_Icon'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Icon'].BackgroundTransparency = 1;
+Converted['_Icon'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Icon'].BorderSizePixel = 0;
+Converted['_Icon'].Position = UDim2.new(0.00363636366, 0, 0.0500000007, 0);
+Converted['_Icon'].Size = UDim2.new(0, 17, 0, 17);
+Converted['_Icon'].Name = "Icon";
+Converted['_Icon'].Parent = Converted['_Header'];
+Converted['_UIStroke'].ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+Converted['_UIStroke'].Color = Color3.fromRGB(100.00000923871994, 100.00000923871994, 100.00000923871994);
+Converted['_UIStroke'].Parent = Converted['_Header'];
+Converted['_Close'].Font = Enum.Font.Arial;
+Converted['_Close'].Text = "X";
+Converted['_Close'].TextColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Close'].TextScaled = true;
+Converted['_Close'].TextSize = 14;
+Converted['_Close'].TextWrapped = true;
+Converted['_Close'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Close'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Close'].BorderSizePixel = 0;
+Converted['_Close'].Position = UDim2.new(0.898181796, 0, 0, 0);
+Converted['_Close'].Size = UDim2.new(0, 28, 0, 19);
+Converted['_Close'].Name = "Close";
+Converted['_Close'].Parent = Converted['_Header'];
+Converted['_UIStroke1'].ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+Converted['_UIStroke1'].Color = Color3.fromRGB(100.00000923871994, 100.00000923871994, 100.00000923871994);
+Converted['_UIStroke1'].Enabled = false;
+Converted['_UIStroke1'].Parent = Converted['_Close'];
+Converted['_AutoRejoin'].Font = Enum.Font.Arial;
+Converted['_AutoRejoin'].Text = "R";
+Converted['_AutoRejoin'].TextColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_AutoRejoin'].TextScaled = true;
+Converted['_AutoRejoin'].TextSize = 14;
+Converted['_AutoRejoin'].TextWrapped = true;
+Converted['_AutoRejoin'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_AutoRejoin'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_AutoRejoin'].BorderSizePixel = 0;
+Converted['_AutoRejoin'].Position = UDim2.new(0.800000012, 0, 0, 0);
+Converted['_AutoRejoin'].Size = UDim2.new(0, 27, 0, 19);
+Converted['_AutoRejoin'].Name = "AutoRejoin";
+Converted['_AutoRejoin'].Parent = Converted['_Header'];
+Converted['_UIStroke2'].ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+Converted['_UIStroke2'].Color = Color3.fromRGB(100.00000923871994, 100.00000923871994, 100.00000923871994);
+Converted['_UIStroke2'].Enabled = false;
+Converted['_UIStroke2'].Parent = Converted['_AutoRejoin'];
+Converted['_Frame'].Image = "rbxassetid://14746727342";
+Converted['_Frame'].ScaleType = Enum.ScaleType.Crop;
+Converted['_Frame'].BackgroundColor3 = Color3.fromRGB(65.0000037252903, 65.0000037252903, 65.0000037252903);
+Converted['_Frame'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_Frame'].BorderSizePixel = 0;
+Converted['_Frame'].Position = UDim2.new(0, 0, 0.983334303, 0);
+Converted['_Frame'].Size = UDim2.new(0, 275, 0, 135);
+Converted['_Frame'].Name = "Frame";
+Converted['_Frame'].Parent = Converted['_Header'];
+Converted['_UIStroke3'].ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+Converted['_UIStroke3'].Color = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_UIStroke3'].Parent = Converted['_Frame'];
+Converted['_ScrollingFrame'].BottomImage = "";
+Converted['_ScrollingFrame'].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_ScrollingFrame'].ScrollBarThickness = 7;
+Converted['_ScrollingFrame'].ScrollingDirection = Enum.ScrollingDirection.Y;
+Converted['_ScrollingFrame'].TopImage = "";
+Converted['_ScrollingFrame'].Active = true;
+Converted['_ScrollingFrame'].BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_ScrollingFrame'].BackgroundTransparency = 1;
+Converted['_ScrollingFrame'].BorderColor3 = Color3.fromRGB(0, 0, 0);
+Converted['_ScrollingFrame'].BorderSizePixel = 0;
+Converted['_ScrollingFrame'].Size = UDim2.new(0, 275, 0, 135);
+Converted['_ScrollingFrame'].ZIndex = 2;
+Converted['_ScrollingFrame'].Parent = Converted['_Frame'];
+Converted['_TextBox'].ClearTextOnFocus = false;
+Converted['_TextBox'].Font = Enum.Font.SourceSans;
+Converted['_TextBox'].PlaceholderText = "Player name...";
+Converted['_TextBox'].ShowNativeInput = false;
+Converted['_TextBox'].Text = "";
+Converted['_TextBox'].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765);
+Converted['_TextBox'].TextScaled = true;
+Converted['_TextBox'].TextSize = 14;
+Converted['_TextBox'].TextWrapped = true;
+Converted['_TextBox'].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_TextBox'].BorderColor3 = Color3.fromRGB(255, 85.0000025331974, 0);
+Converted['_TextBox'].Position = UDim2.new(0.13454546, 0, -0.362962961, 0);
+Converted['_TextBox'].Size = UDim2.new(0, 200, 0, 20);
+Converted['_TextBox'].ZIndex = 3;
+Converted['_TextBox'].Parent = Converted['_ScrollingFrame'];
+Converted['_LocalScript'].Name = "LocalScript";
+Converted['_LocalScript'].Parent = Converted['_TextBox'];
+Converted['_Reset'].Font = Enum.Font.Ubuntu;
+Converted['_Reset'].Text = "Reset";
+Converted['_Reset'].TextColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Reset'].TextSize = 16;
+Converted['_Reset'].TextWrapped = true;
+Converted['_Reset'].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_Reset'].BorderColor3 = Color3.fromRGB(255, 85.0000025331974, 0);
+Converted['_Reset'].Position = UDim2.new(0.0909090936, 0, -0.044444453, 0);
+Converted['_Reset'].Size = UDim2.new(0, 100, 0, 30);
+Converted['_Reset'].ZIndex = 3;
+Converted['_Reset'].Name = "Reset";
+Converted['_Reset'].Parent = Converted['_ScrollingFrame'];
+Converted['_Kick'].Font = Enum.Font.Ubuntu;
+Converted['_Kick'].Text = "Kick";
+Converted['_Kick'].TextColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Kick'].TextSize = 16;
+Converted['_Kick'].TextWrapped = true;
+Converted['_Kick'].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_Kick'].BorderColor3 = Color3.fromRGB(255, 85.0000025331974, 0);
+Converted['_Kick'].Position = UDim2.new(0.545454562, 0, -0.044444453, 0);
+Converted['_Kick'].Size = UDim2.new(0, 100, 0, 30);
+Converted['_Kick'].ZIndex = 3;
+Converted['_Kick'].Name = "Kick";
+Converted['_Kick'].Parent = Converted['_ScrollingFrame'];
+Converted['_Plunk'].Font = Enum.Font.Ubuntu;
+Converted['_Plunk'].Text = "Plunk";
+Converted['_Plunk'].TextColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Plunk'].TextSize = 16;
+Converted['_Plunk'].TextWrapped = true;
+Converted['_Plunk'].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_Plunk'].BorderColor3 = Color3.fromRGB(255, 85.0000025331974, 0);
+Converted['_Plunk'].Position = UDim2.new(0.0909090936, 0, 0.237037033, 0);
+Converted['_Plunk'].Size = UDim2.new(0, 100, 0, 30);
+Converted['_Plunk'].ZIndex = 3;
+Converted['_Plunk'].Name = "Plunk";
+Converted['_Plunk'].Parent = Converted['_ScrollingFrame'];
+Converted['_Punish'].Font = Enum.Font.Ubuntu;
+Converted['_Punish'].Text = "Punish";
+Converted['_Punish'].TextColor3 = Color3.fromRGB(255, 255, 255);
+Converted['_Punish'].TextSize = 16;
+Converted['_Punish'].TextWrapped = true;
+Converted['_Punish'].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746);
+Converted['_Punish'].BorderColor3 = Color3.fromRGB(255, 85.0000025331974, 0);
+Converted['_Punish'].Position = UDim2.new(0.545454502, 0, -0.214814827, 0);
+Converted['_Punish'].Size = UDim2.new(0, 100, 0, 30);
+Converted['_Punish'].ZIndex = 3;
+Converted['_Punish'].Name = "Punish";
+Converted['_Punish'].Parent = Converted['_ScrollingFrame'];
+Converted['_UIPadding'].Parent = Converted['_ScrollingFrame'];
+Converted['_clicking'].SoundId = "rbxassetid://9083627113";
+Converted['_clicking'].Volume = 1;
+Converted['_clicking'].Name = "clicking";
+Converted['_clicking'].Parent = Converted['_SSES'];
+Converted['_hovers'].SoundId = "rbxassetid://552900451";
+Converted['_hovers'].Volume = 0.699999988079071;
+Converted['_hovers'].Name = "hovers";
+Converted['_hovers'].Parent = Converted['_SSES'];
+Converted['_SSES'].Parent = game.CoreGui;
+local fake_module_scripts = {};
+local function KADFQF_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Button'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local enable = false;
+	script.Parent.MouseButton1Click:Connect(function()
+		if (enable == false) then
+			enable = true;
+			script.Parent.Text = "Restore Down";
+			script.Parent.Header.Visible = true;
+		else
+			enable = false;
+			script.Parent.Text = "Maximize";
+			script.Parent.Header.Visible = false;
+		end
+	end);
+end
+local function VJVT_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Name'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local txt = script.Parent;
+	txt.Text = "SSES - " .. game.Name;
+end
+local function JGALUPY_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Close'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0);
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255);
+	end);
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+		script.Parent.TextColor3 = Color3.fromRGB(0, 0, 0);
+	end);
+	script.Parent.MouseButton1Click:Connect(function()
+		game:Shutdown();
+	end);
+end
+local function PGOB_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_AutoRejoin'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	script.Parent.MouseButton1Click:Connect(function()
+		local Dir = game.CoreGui:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay");
+		local Players = game.Players;
+		local TeleportService = game:GetService("TeleportService");
+		local PlaceId = game.PlaceId;
+		local JobId = game.JobId;
+		Dir.DescendantAdded:Connect(function(Err)
+			if (Err.Name == "ErrorTitle") then
+				Err:GetPropertyChangedSignal("Text"):Connect(function()
+					if (Err.Text:sub(0, 12) == "Disconnected") then
+						if (#Players:GetPlayers() <= 1) then
+							Players.LocalPlayer:Kick("\nRejoining...");
+							wait();
+							TeleportService:Teleport(PlaceId, Players.LocalPlayer);
+						else
+							TeleportService:TeleportToPlaceInstance(PlaceId, JobId, Players.LocalPlayer);
+						end
+					end
+				end);
+			end
+		end);
+	end);
+end
+local function GMMBZN_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Reset'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local lp = game:FindService("Players").LocalPlayer;
+	local function gplr(String)
+		local Found = {};
+		local strl = String:lower();
+		if (strl == "all") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found, v);
+			end
+		elseif (strl == "others") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name ~= lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		elseif (strl == "me") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name == lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		else
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name:lower():sub(1, #String) == String:lower()) then
+					table.insert(Found, v);
+				end
+			end
+		end
+		return Found;
+	end
+	local function tell(str, dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {Title="Message:",Text=str,Icon="rbxassetid://12755657711",Duration=(dur or 3)});
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local Target = gplr(script.Parent.Parent.TextBox.Text);
+		if Target[1] then
+			Target = Target[1];
+			Target.Character.Humanoid.Health = 0;
+		else
+			tell("Invalid player");
+		end
+	end);
+end
+local function CNVKOE_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Kick'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local lp = game:FindService("Players").LocalPlayer;
+	local function gplr(String)
+		local Found = {};
+		local strl = String:lower();
+		if (strl == "all") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found, v);
+			end
+		elseif (strl == "others") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name ~= lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		elseif (strl == "me") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name == lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		else
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name:lower():sub(1, #String) == String:lower()) then
+					table.insert(Found, v);
+				end
+			end
+		end
+		return Found;
+	end
+	local function tell(str, dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {Title="Message:",Text=str,Icon="rbxassetid://12755657711",Duration=(dur or 3)});
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local Target = gplr(script.Parent.Parent.TextBox.Text);
+		if Target[1] then
+			Target = Target[1];
+			Target:Kick();
+		else
+			tell("Invalid player");
+		end
+	end);
+end
+local function HEBHNUI_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Plunk'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local lp = game:FindService("Players").LocalPlayer;
+	local function gplr(String)
+		local Found = {};
+		local strl = String:lower();
+		if (strl == "all") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found, v);
+			end
+		elseif (strl == "others") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name ~= lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		elseif (strl == "me") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name == lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		else
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name:lower():sub(1, #String) == String:lower()) then
+					table.insert(Found, v);
+				end
+			end
+		end
+		return Found;
+	end
+	local function tell(str, dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {Title="Message:",Text=str,Icon="rbxassetid://12755657711",Duration=(dur or 3)});
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local Target = gplr(script.Parent.Parent.TextBox.Text);
+		if Target[1] then
+			Target = Target[1];
+			repeat
+				wait();
+				if (Target.Character.Humanoid.Sit == false) then
+					Target.Character.Humanoid.Sit = true;
+				end
+			until false 
+		else
+			tell("Invalid player");
+		end
+	end);
+end
+local function AAUWY_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "LocalScript";
+	script.Parent = Converted['_Punish'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local lp = game:FindService("Players").LocalPlayer;
+	local function gplr(String)
+		local Found = {};
+		local strl = String:lower();
+		if (strl == "all") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found, v);
+			end
+		elseif (strl == "others") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name ~= lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		elseif (strl == "me") then
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name == lp.Name) then
+					table.insert(Found, v);
+				end
+			end
+		else
+			for i, v in pairs(game:FindService("Players"):GetPlayers()) do
+				if (v.Name:lower():sub(1, #String) == String:lower()) then
+					table.insert(Found, v);
+				end
+			end
+		end
+		return Found;
+	end
+	local function tell(str, dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {Title="Message:",Text=str,Icon="rbxassetid://12755657711",Duration=(dur or 3)});
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local Target = gplr(script.Parent.Parent.TextBox.Text);
+		if Target[1] then
+			Target = Target[1];
+			Target.Character.Humanoid.WalkSpeed = 0;
+			Target.Character.Humanoid.UseJumpPower = true;
+			Target.Character.Humanoid.JumpPower = 0;
+		else
+			tell("Invalid player");
+		end
+	end);
+end
+local function IVASIKQ_fake_script()
+	local script = Instance.new("LocalScript");
+	script.Name = "SoundSystem";
+	script.Parent = Converted['_SSES'];
+	local req = require;
+	local require = function(obj)
+		local fake = fake_module_scripts[obj];
+		if fake then
+			return fake();
+		end
+		return req(obj);
+	end;
+	local function playSound(sound)
+		script.Parent[sound]:Play();
+	end
+	for _, v in pairs(script.Parent:GetDescendants()) do
+		if (v:IsA("TextButton") or v:IsA("ImageButton")) then
+			v.MouseEnter:Connect(function()
+				playSound("hovers");
+			end);
+			v.MouseButton1Click:Connect(function()
+				playSound("clicking");
+			end);
+		end
+	end
+end
+coroutine.wrap(KADFQF_fake_script)();
+coroutine.wrap(VJVT_fake_script)();
+coroutine.wrap(JGALUPY_fake_script)();
+coroutine.wrap(PGOB_fake_script)();
+coroutine.wrap(GMMBZN_fake_script)();
+coroutine.wrap(CNVKOE_fake_script)();
+coroutine.wrap(HEBHNUI_fake_script)();
+coroutine.wrap(AAUWY_fake_script)();
+coroutine.wrap(IVASIKQ_fake_script)();
